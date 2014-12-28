@@ -23,6 +23,7 @@ var image = new Array ();
 
 $('#topimg').click(function() {
   $('#links').fadeToggle(500);
+  $('#searching').focus();
 });
 
 $('body').click(function(e){
@@ -34,16 +35,13 @@ $('body').click(function(e){
 });
 
 $(window).load(function(){
+    $('#searching').focus();
     $('.up').on('click', function () {
         $(this).siblings('.sub').slideToggle(450);
     })
 });
 
-setTimeout(function() { $('#links').fadeIn(500) }, 1000);
+setTimeout(function() { 
+$('#links').fadeToggle(500);
+} , 1000);
 
-/*window.setInterval(function(){
-  var hh = $('#links').height() / 4;
-  $('.lcont').css('height', hh + 'px');
-  var gg = hh * 0.35;
-  $('.sub').css('margin-top', gg + 'px');
-}, 100);*/

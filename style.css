@@ -4,6 +4,8 @@
     }
     body { 
       overflow:hidden;
+      background-image:url(symphony.png);
+      /*credit to subtlepatterns.com*/
     }
     * { 
       font-family:"Mint Spirit";
@@ -16,6 +18,7 @@
       text-decoration:none;
       outline:none;
       color:#1b1b1b;
+      
     }
     a:hover {
       color:#e85855;
@@ -46,9 +49,10 @@
       position:absolute;
       margin:auto !important;
       top:0;bottom:0;left:0;right:0;
-      width:475px;height:475px;
+      width:471px;height:471px;
       background:rgba(255,255,255,0.8);
       color:#000;
+      border-radius:50%;
       text-align:center;
     }
     #links p {
@@ -64,6 +68,31 @@
       width:475px;
       height:118.75px;
     }
-    input {
+    input#searching {
       font-size:12px;
+      border:none;
+      color:#d7d7d7;
+      background:rgba(240,240,240,0.5) !important;
+      -webkit-transition: all 800ms ease-in-out;
+      -moz-transition: all 800ms ease-in-out;
+      -o-transition: all 800ms ease-in-out;
+      transition: all 800ms ease-in-out;
+    }
+    input#searching:focus {
+      background:#fff !important;
+      color:#303030 !important;
+      border:none;
+      -webkit-transition: all 800ms ease-in-out;
+      -moz-transition: all 800ms ease-in-out;
+      -o-transition: all 800ms ease-in-out;
+      transition: all 800ms ease-in-out;
+    }
+    input#searching:hover {
+      background:#f7f6f6 !important;
+      color:#9f9f9f !important;
+      border:none;
+      -webkit-transition: all 800ms ease-in-out;
+      -moz-transition: all 800ms ease-in-out;
+      -o-transition: all 800ms ease-in-out;
+      transition: all 800ms ease-in-out;
     }
